@@ -1,8 +1,13 @@
-```startuml
-@startuml
-Entity01 }|..|| Entity02
-Entity03 }〇..〇| Entity04
-Entity05 ||--〇{ Entity06
-Entity07 |〇--||Entity08
-@enduml
-```
+entity"顧客マスタ" as customer <m_customer>
+<<M.MASTER_MARK_COLOR>>{
+  + customer_code [PK]
+  --
+  pass
+  name
+  address
+  tel
+  mail
+  del_flag
+  reg_date
+}
+  
