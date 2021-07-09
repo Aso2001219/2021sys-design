@@ -2,12 +2,14 @@
 
 d_purchase
 |属性名|型|PK|NN|FK|
+|------|--|--|--|--|
 |order_id|bigint(20)|〇|〇|------|
 |costomer_code|varchar(50)|-|〇|-|
 |purchase_date|date|-|〇|-|
 |total_price|int(11)|-|〇|-|
 
 d_purchase_detail
+|------|--|--|--|--|
 |属性名|型|PK|NN|FK|
 |detail_id|bigint(20)|〇|〇|-|
 |order_id|bigint(20)|〇|〇|〇|
@@ -16,6 +18,7 @@ d_purchase_detail
 |num|int(11)|-|〇|-|
 
 m_customers
+|------|--|--|--|--|
 |属性名|型|PK|NN|FK|
 |coustomer_code|varchar(50)|〇|〇|-|
 |pass|varchar(50)|〇|〇|〇|
@@ -27,12 +30,14 @@ m_customers
 |reg_date|date|-|〇|-|
 
 m_category
+|------|--|--|--|--|
 |属性名|型|PK|NN|FK|
 |category_id|int(11)|〇|〇|-|
 |name|varchar(20)|-|〇|-|
 |reg_date|date|-|〇|-|
 
 m_items
+|------|--|--|--|--|
 |item_code|int(11)|〇|〇|-|
 |item_name|varchar(50)|-|〇|-|
 |price|int(11)|-|〇|-|
