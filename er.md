@@ -48,7 +48,7 @@ package "ECサイト" as target_system {
   entity "購入テーブル" as purchase <d_purchase> <<T,TABLE_MARK_COLOR>> {
         + order_id [FK]
         --
-        
+        customer_code
         name
         address
         tel
