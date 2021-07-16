@@ -83,8 +83,8 @@ package "ECサイト" as target_system {
   }
   
   customer       |o--o{     purchase 
-  order          ||--|{     purchase_detail 
-  order_detail    }--||     items 
+  purchase          ||--|{     purchase_detail 
+  purchase_detail    }--||     items 
   items          }o--||     category 
   
 @enduml
