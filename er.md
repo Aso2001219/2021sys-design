@@ -44,5 +44,18 @@ package "ECサイト" as target_system {
         reg_date
     }
   }
+  
+  entity "購入テーブル" as purchase <d_purchase> <<T,TABLE_MARK_COLOR>> {
+        + order_id [FK]
+        --
+        
+        name
+        address
+        tel
+        mail
+        del_flag
+        reg_date
+    }
+  }
 @enduml
 ```
