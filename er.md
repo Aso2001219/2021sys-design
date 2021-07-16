@@ -52,9 +52,6 @@ package "ECサイト" as target_system {
         name
         address
         tel
-        mail
-        del_flag
-        reg_date
     }
   }
 @enduml
